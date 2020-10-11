@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/djlonboy/analyser/issues"
   },
-  "homepage": "https://github.com/djlonboy/analyser#readme"
+  "homepage": "https://github.com/djlonboy/analyser#readme",
+  "devDependencies": {
+    "electron": "^10.1.3"
+  }
 }
