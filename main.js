@@ -1,4 +1,6 @@
-const { app, BrowserWindow } = require('electron')
+'use strict'
+
+const { app, BrowserWindow, ipcMain } = require('electron')
 
 function createWindow () {
   // Create the browser window.
@@ -15,6 +17,10 @@ function createWindow () {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+
+  ipcMain.on("trigger_button_clicked", () => {
+    mainWindow.send("message", "This message is from Main.js");
+  })
 }
 
 // This method will be called when Electron has finished
