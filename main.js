@@ -13,11 +13,16 @@ function createWindow () {
   })
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
+  mainWindow.loadFile('index.html');
+
+  // Maximise window to vewport size
+  mainWindow.maximize();
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 
+  // Send a message to renderer.js when a message is recieved that the button
+  // has been clicked.
   ipcMain.on("trigger_button_clicked", () => {
     mainWindow.send("message", "This message is from Main.js");
   })
