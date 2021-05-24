@@ -1,12 +1,14 @@
 {
   "name": "analyser",
+  "productName": "RunAnalyser",
   "version": "1.0.0",
   "description": "Tool for analysing regression test runs from Jenkins CI",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "make-win": "electron-forge make --platform win32"
   },
   "repository": {
     "type": "git",
