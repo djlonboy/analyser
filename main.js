@@ -15,7 +15,7 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadFile('index.html');
 
-  // Maximise window to vewport size
+  // Maximise window to viewport size
   mainWindow.maximize();
 
   // Open the DevTools.
