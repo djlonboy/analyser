@@ -7,3 +7,12 @@ Tool for analysing regression test runs from Jenkins CI
  - npm install
 3) Run the app
  - npm start
+
+# Pacakging
+For MacOS:
+ - npm run make
+
+For Windows:
+1) Clone the respository onto a Windows machine
+2) Run:
+ - npm run make-win
